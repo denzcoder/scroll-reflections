@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Reveal</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    
+    <div class="fill"></div>
+    <div class="fill-one"></div>
+    <section class="first-sec">
+        <div class="container">
+            <div class="content">
+                <h2 class="title">Reveal Element On Scroll</h2>
+                <div class="image">
+                    <img src="images/jose.jpg" >
+                </div>
+                <div class="text-box">
+                    <h3>Lorem Ipsum</h3>
+                    <p>"It is an absolute human certainty that no one can know his own beauty or 
+                        perceive a sense of his own worth until it has been reflected back to him in the 
+                        mirror of another loving, caring human being." - John Joseph Powell.</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="second-sec">
+        <div class="container">
+            <div class="content">
+                
+                <div class="image">
+                    <img src="images/marc (2).jpg" >
+                </div>
+                <div class="info">
+                    <h3 class="info-title">Learn To Live!!!</h3>
+                    <p>When you look in the mirror, what do you see? Do you see the real you, or what you have been conditioned to believe is you? The two are so, so different. One is an infinite consciousness capable of being and creating whatever it chooses, the other is an illusion imprisoned by its own perceived and programmed limitations.
+            
+                        -David Ice</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="third-sec">
+        <div class="container">
+            <div class="content">
+                
+                <div class="image">
+                    <img src="images/pexel.png" >
+                </div>
+                <div class="info">
+                    <h3 class="info-title">Reflectionz!!!</h3>
+                    <p>"“I know that mirrors give us a false sense of confidence.” I continued. <br> “The reflection that we see everyday has nothing to do with how others see us.</p>
+                    <cite>The Glass Lies</cite>
+                    
+                </div>
+            </div>
+            <div class="media-icons">
+                <img src="images/instagram.png" alt="">
+                <img src="images/twitter.png" alt="">
+                <img src="images/facebook.png" alt="">
+                <img src="images/linkedin.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.title, .info-title', { delay: 500, origin: 'left'});
+        ScrollReveal().reveal('.first-sec .image', { delay: 600, origin: 'bottom'});
+        ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right'});
+        ScrollReveal().reveal('.second-sec .image, .third-sec .image', { delay: 500, origin: 'top'});
+        ScrollReveal().reveal('.media-icons img', { delay: 500, origin: 'top'});
+        ScrollReveal().reveal('.fill', { delay: 100, origin: 'left'});
+        ScrollReveal().reveal('.fill-one', { delay: 600, origin: 'right', interval: 200});
+    </script>
+</body>
+</html>
