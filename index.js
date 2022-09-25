@@ -1,4 +1,4 @@
-<script>
+
         ScrollReveal({
             reset: true,
             distance: '60px',
@@ -13,4 +13,4 @@
         ScrollReveal().reveal('.media-icons img', { delay: 500, origin: 'top'});
         ScrollReveal().reveal('.fill', { delay: 100, origin: 'left'});
         ScrollReveal().reveal('.fill-one', { delay: 600, origin: 'right', interval: 200});
-    </script>
+    
